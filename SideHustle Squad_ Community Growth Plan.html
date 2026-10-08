@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SideHustle Squad: Community Growth Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--surface:#fff;--ink:#101828;--mute:#5b6577;--line:#dde2ea;--brand:#3d3bf3;--brand-t:#e8e8fe;--money:#0a8f5b;--money-t:#dff5ea;--warn:#b4530a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1118;--surface:#171b25;--ink:#eef1f7;--mute:#9aa4b8;--line:#2a3142;--brand:#8b8aff;--brand-t:#23244d;--money:#3ddc97;--money-t:#12301f;--warn:#f0a25a}}
+:root[data-theme="dark"]{--bg:#0e1118;--surface:#171b25;--ink:#eef1f7;--mute:#9aa4b8;--line:#2a3142;--brand:#8b8aff;--brand-t:#23244d;--money:#3ddc97;--money-t:#12301f;--warn:#f0a25a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+p{margin:0}
+a{color:var(--brand)}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:20px;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:12px;padding-bottom:12px}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:18px;margin-right:auto}
+nav a{color:var(--mute);text-decoration:none;font-size:14px;font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:800}
+.hero p.lead{font-size:20px;color:var(--mute);margin-top:20px;max-width:30em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.tags span{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:4px 14px;font-size:14px}
+.check{background:var(--surface);border:2px solid var(--ink);border-radius:6px;padding:20px 22px;transform:rotate(1.5deg);box-shadow:6px 6px 0 var(--brand);max-width:420px;justify-self:end;width:100%}
+.check .row{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--mute);border-bottom:1px dashed var(--line);padding:8px 0}
+.check .row b{color:var(--ink)}
+.check .amt{font-family:"Bricolage Grotesque",sans-serif;font-size:56px;font-weight:800;color:var(--money);margin:12px 0 4px}
+.check small{color:var(--mute)}
+.stamp{display:inline-block;border:2px solid var(--money);color:var(--money);border-radius:4px;padding:2px 10px;font-weight:700;font-size:13px;margin-top:10px;transform:rotate(-4deg)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(28px,4.5vw,44px);margin-bottom:12px}
+.sub{color:var(--mute);max-width:38em;margin-bottom:32px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr)}
+.cols>div{padding:0 24px;border-left:1px solid var(--line)}
+.cols>div:first-child{padding-left:0;border-left:0}
+.cols h3{font-size:24px;margin-bottom:8px}
+.cols em{display:block;color:var(--mute);margin-top:12px;font-size:15px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:700;background:var(--brand-t)}
+tr:last-child td{border-bottom:0}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s}
+.steps div{padding:18px 16px 18px 0;border-top:3px solid var(--brand);counter-increment:s;position:relative}
+.steps div:nth-child(5){border-color:var(--money)}
+.steps div::before{content:counter(s);font:800 14px "Bricolage Grotesque",sans-serif;color:var(--brand)}
+.steps b{display:block;font-size:19px;font-family:"Bricolage Grotesque",sans-serif}
+.steps span{display:block;color:var(--mute);font-size:14px;margin-top:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.two h3{font-size:26px;margin-bottom:12px}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
+ul.plain li:last-child{border:0}
+.ideas{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.ideas div{padding:18px 0;border-bottom:1px solid var(--line)}
+.ideas h3{font-size:21px;margin-bottom:4px}
+.ideas p{color:var(--mute);font-size:15.5px}
+.ideas .hot h3{color:var(--brand)}
+.road{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.road div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 10px;font-size:13.5px}
+.road b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:15px}
+.road .m{margin-top:8px;color:var(--mute);font-size:12.5px;border-top:1px solid var(--line);padding-top:6px}
+.road .go{border:2px solid var(--brand);background:var(--brand-t)}
+.bars{display:grid;gap:14px}
+.bar{display:grid;grid-template-columns:90px 1fr;gap:14px;align-items:center}
+.bar .t{height:36px;border-radius:6px;background:var(--brand);color:#fff;display:flex;align-items:center;padding:0 12px;font-weight:700;font-size:14px;min-width:fit-content}
+.bar:last-child .t{background:var(--money);color:#04170e}
+.bar label{font-weight:700}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.kpis div{padding:18px 16px 18px 0;border-top:1px solid var(--line)}
+.kpis b{display:block;font:800 34px "Bricolage Grotesque",sans-serif}
+.kpis span{color:var(--mute);font-size:14px}
+.north{margin-top:28px;background:var(--money-t);border-left:6px solid var(--money);padding:18px 22px;border-radius:0 8px 8px 0}
+.north b{color:var(--money)}
+footer{padding:48px 0;border-top:1px solid var(--line);color:var(--mute);font-size:15px}
+footer h2{color:var(--ink);font-size:30px;margin-bottom:8px}
+@media (max-width:820px){
+.hero,.two,.ideas{grid-template-columns:1fr}
+.check{justify-self:start}
+.cols{grid-template-columns:1fr;gap:28px}
+.cols>div{padding:0;border-left:0;border-top:1px solid var(--line);padding-top:20px}
+.cols>div:first-child{border-top:0;padding-top:0}
+.steps,.kpis{grid-template-columns:1fr 1fr}
+.road{grid-template-columns:1fr 1fr}
+.bar{grid-template-columns:70px 1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>SideHustle Squad</b><a href="#problem">Problem</a><a href="#audience">Audience</a><a href="#launch">Launch</a><a href="#channels">Channels</a><a href="#ideas">Ideas</a><a href="#plan">14 days</a><a href="#growth">Growth</a></div></nav>
+
+<header class="wrap hero">
+<div>
+<h1>From zero experience to first paycheck in 30 days.</h1>
+<p class="lead">A student community for verified gigs, internships, brand deals and paid projects, built on trust, proof and peers.</p>
+<div class="tags"><span>Verified gigs</span><span>Internships</span><span>Brand deals</span><span>Paid projects</span></div>
+</div>
+<div class="check" aria-label="Sample first paycheck">
+<div class="row"><span>Pay to</span><b>A first-year student</b></div>
+<div class="row"><span>For</span><b>First &#8377;500 Challenge</b></div>
+<div class="amt">&#8377;500</div>
+<small>Earned through a verified micro-gig</small><br>
+<span class="stamp">VERIFIED</span>
+</div>
+</header>
+
+<section id="problem"><div class="wrap">
+<h2>Students don't lack opportunities. They lack three things.</h2>
+<p class="sub">Most student groups only dump links. We fix the real blockers.</p>
+<div class="cols">
+<div><h3>Trust</h3><p>Fear of fake internships and scam gigs. Our Trust Badge marks every verified recruiter.</p><em>"A friend lost &#8377;2,000 to a fake offer letter."</em></div>
+<div><h3>Confidence</h3><p>Fear of pitching to brands and clients. Pitch templates and mentors lower the barrier.</p><em>"Who will pay a first-year student?"</em></div>
+<div><h3>Proof</h3><p>No portfolio means no hire. Gig Swaps and the Proof Wall build one for free.</p><em>"I have no experience to show."</em></div>
+</div>
+</div></section>
+
+<section id="audience"><div class="wrap">
+<h2>Who we build for</h2>
+<p class="sub">Four groups, four different pain points.</p>
+<div class="tbl"><table>
+<tr><th>Segment</th><th>Pain point</th><th>What we offer</th></tr>
+<tr><td><b>1st/2nd-year students</b></td><td>No experience, nobody hires</td><td>Beginner micro-gigs, skill challenges</td></tr>
+<tr><td><b>Tier-2/3 city students</b></td><td>Low access to networks</td><td>Remote gigs, mentor access</td></tr>
+<tr><td><b>Creators and designers</b></td><td>Don't know how to land brand deals</td><td>Brand collab board, pitch templates</td></tr>
+<tr><td><b>Final-year students</b></td><td>Need internships and a portfolio</td><td>Internship alerts, resume reviews</td></tr>
+</table></div>
+<div class="two" style="margin-top:32px">
+<div><h3>How we find them</h3><ul class="plain">
+<li>10-question Google Form to 50 students</li>
+<li>Track hashtags, Reddit threads and college groups about part-time work</li>
+<li>10 short chats with student freelancers</li></ul></div>
+<div><h3>The member journey</h3>
+<ul class="plain"><li><b>Discover</b> a Reel, poster or friend's invite</li><li><b>Join</b> by QR and get the Starter Kit</li><li><b>Engage</b> with daily drops and challenges</li><li><b>Earn</b> a first gig with mentor help</li><li><b>Advocate</b> by sharing the win and inviting friends</li></ul></div>
+</div>
+</div></section>
+
+<section id="launch"><div class="wrap">
+<h2>Getting the first 100 members</h2>
+<p class="sub">Five tactics, all free to run.</p>
+<div class="steps">
+<div><b>Founding 25</b><span>Friends, club heads and freelancing seniors get a Founding Member badge.</span></div>
+<div><b>Ambassadors</b><span>5 students across colleges bring 20 members each for certificates and early gigs.</span></div>
+<div><b>Starter Kit</b><span>Free PDF: 20 platforms, 5 pitch templates, portfolio checklist.</span></div>
+<div><b>Referral loop</b><span>Invite 3 friends, unlock a resume review or Pitch Template Pack.</span></div>
+<div><b>Waitlist</b><span>A landing page with a countdown builds anticipation.</span></div>
+</div>
+</div></section>
+
+<section id="channels"><div class="wrap">
+<h2>Online and offline, working together</h2>
+<p class="sub">Online brings reach. Offline builds trust.</p>
+<div class="two">
+<div><h3>Online</h3><ul class="plain">
+<li><b>WhatsApp / Telegram:</b> core hub, Gig of the Day</li>
+<li><b>Instagram Reels:</b> "How I earned &#8377;X", scam-spotting tips</li>
+<li><b>LinkedIn:</b> member stories, internships</li>
+<li><b>Discord:</b> skill rooms for design, writing, video, coding</li>
+<li><b>YouTube Shorts:</b> 60-second gig tutorials</li></ul></div>
+<div><h3>Offline</h3><ul class="plain">
+<li><b>Campus pop-up desk:</b> QR code, spin-the-wheel, portfolio tips</li>
+<li><b>Gig Jam events:</b> 2 hours to build a portfolio piece or pitch a brand</li>
+<li><b>Club partnerships:</b> E-Cells, placement cells, design and media clubs</li>
+<li><b>Local tie-ups:</b> caf&eacute;s, coaching centres and boutiques hire students</li>
+<li><b>Posters:</b> "Scan to Earn" QR in libraries and canteens</li></ul></div>
+</div>
+<h3 style="margin:36px 0 12px;font-size:24px">Weekly rhythm</h3>
+<div class="tbl"><table><tr><th>Mon</th><th>Wed</th><th>Fri</th><th>Sun</th></tr>
+<tr><td>Opportunity Drop: verified gigs and internships</td><td>Skill Sprint: 15-minute tutorial or live</td><td>Win Wall: earnings and offer letters</td><td>Scam Alert and Resume Review</td></tr></table></div>
+</div></section>
+
+<section id="ideas"><div class="wrap">
+<h2>Creative ideas that set us apart</h2>
+<p class="sub">Trust is the brand. Everything else makes it stick.</p>
+<div class="ideas">
+<div class="hot"><h3>First &#8377;500 Challenge</h3><p>A 7-day challenge for beginners to earn their first &#8377;500 through micro-gigs. Winners are featured, which creates shareable stories.</p></div>
+<div class="hot"><h3>Scam Radar</h3><p>A Trust Badge for verified recruiters and a public blacklist of fakes.</p></div>
+<div><h3>Gig Swap</h3><p>A designer makes a logo, a writer drafts captions. Both build portfolios for free.</p></div>
+<div><h3>Brand Pitch Battles</h3><p>Small brands post a real brief, members pitch, the best pitch wins paid work.</p></div>
+<div><h3>Proof Wall</h3><p>A public gallery of earnings, certificates and projects.</p></div>
+<div><h3>Mystery Mentor Mondays</h3><p>Anonymous professionals share advice, revealed at the end of the week.</p></div>
+<div><h3>Tier Levels</h3><p>Explorer, Hustler, Pro, Mentor, with perks at each stage.</p></div>
+</div>
+</div></section>
+
+<section id="plan"><div class="wrap">
+<h2>The 14-day action plan</h2>
+<p class="sub">Six days to build, launch on day 7, then a week of engagement and review.</p>
+<div class="road">
+<div><b>Days 1-2</b>Foundation: name, logo, WhatsApp and Discord, survey, Starter Kit<div class="m">Setup ready</div></div>
+<div><b>Days 3-4</b>Seed: Founding 25, 5 ambassadors, waitlist page<div class="m">50 members</div></div>
+<div><b>Days 5-6</b>Buzz: 3 Reels, posters and QR codes<div class="m">150 waitlist</div></div>
+<div class="go"><b>Day 7</b>Launch: live kickoff, announce &#8377;500 Challenge, 10 verified gigs<div class="m">200 members</div></div>
+<div><b>Days 8-10</b>Engage: daily drops, first Skill Sprint, referral campaign<div class="m">30% daily active</div></div>
+<div><b>Days 11-12</b>Offline push: campus pop-up or Gig Jam<div class="m">350 members</div></div>
+<div><b>Days 13-14</b>Review: winners, Win Wall, survey, next 30 days<div class="m">300-500 total</div></div>
+</div>
+</div></section>
+
+<section id="growth"><div class="wrap">
+<h2>Where this goes</h2>
+<p class="sub">Reach math for the first 2 weeks: 10 Reels plus 5 ambassadors reach 15,000-20,000 impressions. At a 2-3% join rate that is about 300-500 members.</p>
+<div class="bars" role="img" aria-label="Member growth targets: 300 to 500 by day 14, 1,000 by month 1, 3,000 to 5,000 by month 3, 10,000 plus by month 6">
+<div class="bar"><label>Day 14</label><div class="t" style="width:8%">300-500</div></div>
+<div class="bar"><label>Month 1</label><div class="t" style="width:14%">~1,000</div></div>
+<div class="bar"><label>Month 3</label><div class="t" style="width:45%">3,000-5,000</div></div>
+<div class="bar"><label>Month 6</label><div class="t" style="width:100%">10,000+</div></div>
+</div>
+
+<h3 style="margin:48px 0 12px;font-size:28px">Day-14 success metrics</h3>
+<div class="kpis">
+<div><b>300+</b><span>new members</span></div>
+<div><b>30%</b><span>daily active</span></div>
+<div><b>25%</b><span>invite someone</span></div>
+<div><b>100+</b><span>challenge participants</span></div>
+<div><b>100+</b><span>applied to a gig</span></div>
+<div><b>20+</b><span>first paid gigs landed</span></div>
+<div><b>3-5</b><span>brand partners</span></div>
+<div><b>80%+</b><span>positive satisfaction</span></div>
+</div>
+<div class="north"><b>North Star:</b> the number of students who earned their first income through the community. Also tracked: Instagram engagement above 5%.</div>
+
+<h3 style="margin:48px 0 12px;font-size:28px">Sustaining growth</h3>
+<div class="tbl"><table>
+<tr><th>Pillar</th><th>Plan</th></tr>
+<tr><td><b>Member-led</b></td><td>Top members become moderators and mentors, so growth doesn't depend on one person.</td></tr>
+<tr><td><b>Retention</b></td><td>Streak rewards, levels, monthly leaderboards, alumni network.</td></tr>
+<tr><td><b>Scalability</b></td><td>City Chapter model: every campus gets a lead and the same playbook.</td></tr>
+<tr><td><b>Monetisation (later)</b></td><td>Brand sponsorships, premium workshops, small commission on partner gigs.</td></tr>
+<tr><td><b>Risk control</b></td><td>Verification for every opportunity, a report-a-scam button, clear guidelines.</td></tr>
+</table></div>
+</div></section>
+
+<footer><div class="wrap">
+<h2>Why SideHustle Squad wins</h2>
+<p><b>Creativity:</b> Scam Radar, First &#8377;500 Challenge, Pitch Battles. <b>Feasibility:</b> free tools, zero-budget start. <b>Scalability:</b> City Chapters and member moderators. <b>Strategy:</b> clear funnel and measurable targets. <b>Student insight:</b> built around trust, confidence and proof.</p>
+<p style="margin-top:16px">Level 1 submission to StudentTribe &middot; [Your Name] &middot; [College, City]</p>
+</div></footer>
+</body>
+</html>
